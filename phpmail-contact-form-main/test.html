@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div>
+<label"> ພາສາຕົ້ນສະບັບ</label>
+        <div>
+            <select>
+                <option value="ภาษาไทย ">ພາສາລາວ </option>
+                <option value="ภาษาอังกฤษ ">ພາສາອັງກິດ </option>
+                <option value="ภาษาจีน (ประยุกต์) ">ພາສາຈີນ </option>
+                <option value="ภาษาจีน (ดั้งเดิม) ">ພາສາຫວຽດນາມ </option>
+                <option value="ภาษาญี่ปุ่น ">ພາສາຟຣັງ </option>
+                <option value="ภาษาเกาหลี ">ພາສາໄທ </option>
+                <option value="ภาษาเกาหลี ">ພາສາລັດເຊຍ </option>
+                <option value="อื่น ๆ">ອື່ນ ໆ</option>
+            </select>
+        </div>
+</div>
+    <div>
+    <label> ພາສາເປົ້າໝາຍ </label>
+            <div>
+                <select>
+                    <option value="ภาษาไทย ">ພາສາລາວ </option>
+                    <option value="ภาษาอังกฤษ ">ພາສາອັງກິດ </option>
+                    <option value="ภาษาจีน (ประยุกต์) ">ພາສາຈີນ </option>
+                    <option value="ภาษาจีน (ดั้งเดิม) ">ພາສາຫວຽດນາມ </option>
+                    <option value="ภาษาญี่ปุ่น ">ພາສາຟຣັງ </option>
+                    <option value="ภาษาเกาหลี ">ພາສາໄທ </option>
+                    <option value="ภาษาเกาหลี ">ພາສາລັດເຊຍ </option>
+                    <option value="อื่น ๆ">ອື່ນ ໆ</option>
+                </select>
+            </div>
+</div>
+<div>
+    <label> ປະເພດການບໍລິການ </label>
+            <select>
+                <option value="การแปลพร้อมรับรองคำแปล ">ການແປພ້ອມຮ້ອງ </option>
+                <option value="การแปลพร้อมรับรองนิติกรณ์ (ประทับตราจากกระทรวงการต่างประเทศ) ">การแปลพร้อมรับรองนิติกรณ์ (ประทับตราจากกระทรวงการต่างประเทศ) </option>
+                <option value="การแปลรับรองโนตารี ">การแปลรับรองโนตารี </option>
+                <option value="การแปลทั่วไป ">การแปลทั่วไป </option>
+                <option value="การแปลสคริปต์/ซับไตเติ้ล ">การแปลสคริปต์/ซับไตเติ้ล </option>
+                <option value="บริการล่ามแปลภาษา ">บริการล่ามแปลภาษา </option>
+                <option value="บริการสถานทูต ">บริการสถานทูต </option>
+                <option value="พิสูจน์อักษร/แก้ไขงาน ">พิสูจน์อักษร/แก้ไขงาน </option>
+                <option value="การเขียนเนื้อหา ">การเขียนเนื้อหา </option>
+                <option value="แพ็กเกจแต่งงาน">แพ็กเกจแต่งงาน</option>
+            </select>
+        </div>
+    <div>
+<label> แนบไฟล์ของคุณ (สูงสุด 5 ไฟล์) </label>
+<input type="file" name="form_fields[file_attachments][]" id="form-field-file_attachments" class="elementor-field elementor-size-sm  elementor-upload-field" multiple="multiple" data-maxsize="10" data-maxsize-message="This file exceeds the maximum allowed size.">
+    </div>
+        <div>
+            <label> ชื่อของคุณ </label>
+            <input size="1" type="text" name="form_fields[your_name]" id="form-field-your_name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="กรุณากรอกชื่อเต็มของคุณ" required="required" aria-required="true">
+        </div>
+    <div>
+<label> อีเมลของคุณ	</label>
+<input size="1" type="email" name="form_fields[email_address]" id="form-field-email_address" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="กรุณาใส่ที่อยู่อีเมลของคุณ" required="required" aria-required="true">
+    </div>
+        <div>
+            <label> หมายเลขโทรศัพท์ของคุณ </label>
+            <input size="1" type="tel" name="form_fields[phone_number]" id="form-field-phone_number" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="โปรดกรอกหมายเลขโทรศัพท์ของคุณ" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+        </div>
+    <div>
+<label> ข้อความ </label>
+<textarea name="form_fields[message]" id="form-field-message" rows="4" placeholder="กรุณาแจ้งความต้องการของคุณ เช่น จุดประสงค์ของการใช้คำแปล ฯลฯ"></textarea>
+    </div>
+        <div>
+            <button type="submit">
+            <span>ส่งแบบฟอร์ม</span>
+        </button>
+    </body>
+    </html>

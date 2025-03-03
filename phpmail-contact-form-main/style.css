@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
+
+.wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    margin: 0;
+}
+/* .wrapper .button {
+  display: inline-block;  ປ່ຽນຈາກ ໃຫ້ເປັນແນວນອນ
+  height: 60px;
+  width: 60px;
+  display: block;
+  text-decoration: none;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+} */
+.wrapper .button {
+    display: block; /* ປ່ຽນຈາກ inline-block ແລະ float: left */
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    margin: 10px auto; /* ປ່ຽນ margin ເພື່ອຈັດວາງກາງ ແລະມີໄລຍະຫ່າງ */
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover span {
+    right: auto; /* ລຶບ right */
+    left: 50px; /* ຍ້າຍຕົວອັກສອນໄປທາງຊ້າຍ */
+}
+.wrapper .button:hover {
+  width: 200px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  color: #000;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #25D366;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #000000;
+}
+.wrapper .button:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #25D366;
+}
+.wrapper .button:nth-child(3) span {
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span {
+  color: #000000;
+}
+.wrapper .button:nth-child(5) span {
+  color: #ff0000;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 15px; /* ຫຼຸດ padding ລົງ */
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px; /* ເພີ່ມຄວາມກວ້າງສູງສຸດ */
+    text-align: center;
+    max-height: 200px; /* ເພີ່ມຄວາມສູງສູງສຸດ */
+    overflow: auto; /* ເພີ່ມ scrollbar ຖ້າເນື້ອໃນຍາວເກີນ */
+    font-size: 14px; /* ຫຼຸດຂະໜາດຕົວອັກສອນ */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#loadingIndicator {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: rgb(0, 212, 46);
+}
+
+body {
+    font-family: "Noto Sans Lao", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+select, input, textarea, button{
+    font-family: "Noto Sans Lao", sans-serif;
+}
+
+.file-upload {
+    background-color: #f0f0f0;
+    padding: 10px;
+    
+  
+}
+
+.language-group .form-group:first-child {
+    margin-right: 5px; /* ເພີ່ມ margin-right */
+}
+
+.language-group .form-group:last-child {
+    margin-left: 5px; /* ເພີ່ມ margin-left */
+}
+.container {
+    width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 30px; /* ລຶບຊ່ອງຫວ່າງດ້ານລຸ່ມ */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.language-group, .name-phone-group {
+    display: flex;
+}
+
+.language-group .form-group, .name-phone-group .form-group {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .language-group, .name-phone-group {
+        flex-direction: column;
+    }
+
+    .language-group .form-group, .name-phone-group .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
